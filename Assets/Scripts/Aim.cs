@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Aim : MonoBehaviour
 {
+    //[SerializeField] private FieldofView fieldofView;
     Transform aimTransform;
      void Awake() 
     {
@@ -16,6 +17,7 @@ public class Aim : MonoBehaviour
         Vector3 mousePosition = GetMousePosition();
 
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
+        //fieldofView.SetAimDirection(aimDirection);
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x)* Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0,0, angle);
     }

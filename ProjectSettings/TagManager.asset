@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Perspective
+    uniqueID: 1283273188
+    locked: 0
+  - name: Top
+    uniqueID: 1502599955
+    locked: 0
