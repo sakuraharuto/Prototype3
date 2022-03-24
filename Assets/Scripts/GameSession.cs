@@ -24,4 +24,15 @@ public class GameSession : MonoBehaviour
         itemCount += numToAdd;
         itemText.text = itemCount.ToString();
     }
+
+    public void minusItemCount(int numToMinus){
+        
+        itemCount -= numToMinus;
+        itemText.text = itemCount.ToString();
+        
+    }
+
+    public int getItemCount(){
+        return itemCount;
+    }
 }
