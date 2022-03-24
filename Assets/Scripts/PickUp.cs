@@ -9,6 +9,7 @@ public class PickUp : MonoBehaviour
         // Add score, play sound, destory object
 
         AudioSource.PlayClipAtPoint(pickUpSFX, Camera.main.transform.position);
+        FindObjectOfType<GameSession>().addItemCount(1);  // We only picked up 1 item
         Destroy(gameObject);
     }
 }
