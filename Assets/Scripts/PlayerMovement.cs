@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {   
 
+    Rigidbody2D rb2d;
     [SerializeField] float moveSpeed = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -19,9 +20,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void MovePlayer(){
-        float xValue = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        float yValue = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        float xValue = Input.GetAxisRaw("Horizontal");
+        float yValue = Input.GetAxisRaw("Vertical");
 
-        transform.Translate(xValue, yValue, 0);
+        Vector3 movementVector = new Vector3(xValue, yValue, 0);
+        movementVector = movementVector.normalized * moveSpeed * Time.deltaTime;
+
+        rb2d.MovePosition(transform.position + movementVector);
+
+        //transform.Translate(xValue, yValue, 0);
     }
 }
