@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BaseMap2@20_317
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 3857362579388143217, guid: 5f1658cda1d5c43388391482ee73b92e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.951, g: 0.199, b: 0.205, a: 0.74509805}
   m_Transform:
     e00: 1
     e01: 0

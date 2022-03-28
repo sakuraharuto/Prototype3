@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StoneMap1@20_66
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 2674505945987635695, guid: 5e2bb706de1754119afbc481ff73578c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.9060538, b: 0.7505785, a: 1}
   m_Transform:
     e00: 1
     e01: 0
