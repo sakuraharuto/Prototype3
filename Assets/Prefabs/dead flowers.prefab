@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3239616936742819950}
   - component: {fileID: 3239616936742819951}
   m_Layer: 0
-  m_Name: Square
+  m_Name: dead flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
