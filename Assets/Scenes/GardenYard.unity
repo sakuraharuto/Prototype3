@@ -3179,7 +3179,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6951553935441063008, guid: 87cd78e2601047047b5fc7ae97c123e7, type: 3}
       propertyPath: moveSpeed
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6951553935441063010, guid: 87cd78e2601047047b5fc7ae97c123e7, type: 3}
       propertyPath: m_Color.b
@@ -13403,7 +13403,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 6
   m_Depth: 0.29
   m_CullingMask:
     serializedVersion: 2
@@ -13737,14 +13737,14 @@ MonoBehaviour:
   m_Follow: {fileID: 382548496}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 10
+    OrthographicSize: 6
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
