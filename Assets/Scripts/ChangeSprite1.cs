@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ChangeSprite1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] Sprite changeToSprite;
+    [SerializeField] AudioClip changeSFX;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        other.gameObject.GetComponent<SpriteRenderer>().sprite = changeToSprite;
+        AudioSource.PlayClipAtPoint(changeSFX, Camera.main.transform.position);
+        Destroy(gameObject);
     }
 }
